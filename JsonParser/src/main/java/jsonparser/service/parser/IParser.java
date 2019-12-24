@@ -1,10 +1,9 @@
 package jsonparser.service.parser;
 
-import jsonparser.model.json.Json;
-import jsonparser.model.json.value.JValue;
+import jsonparser.model.json.value.JsonValue;
 
 public interface IParser {
 
-    JValue parseJson(String jsonString);
+    JsonValue parseJson(String jsonString);
 
 }

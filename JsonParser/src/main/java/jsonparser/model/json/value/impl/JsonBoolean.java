@@ -1,12 +1,12 @@
 package jsonparser.model.json.value.impl;
 
-import jsonparser.model.json.value.JValue;
+import jsonparser.model.json.value.JsonValue;
 
-public class JBoolean implements JValue {
+public class JsonBoolean implements JsonValue {
 
-    Boolean value;
+    private Boolean value;
 
-    public JBoolean(Boolean value) {
+    public JsonBoolean(Boolean value) {
         this.value = value;
     }
 

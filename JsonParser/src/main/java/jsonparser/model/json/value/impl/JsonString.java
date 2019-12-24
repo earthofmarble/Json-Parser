@@ -1,12 +1,12 @@
 package jsonparser.model.json.value.impl;
 
-import jsonparser.model.json.value.JValue;
+import jsonparser.model.json.value.JsonValue;
 
-public class JString implements JValue {
+public class JsonString implements JsonValue {
 
-    String value;
+    private String value;
 
-    public JString(String value) {
+    public JsonString(String value) {
         this.value = value;
     }
 

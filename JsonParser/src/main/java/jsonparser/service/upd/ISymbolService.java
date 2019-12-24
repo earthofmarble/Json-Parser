@@ -1,7 +1,5 @@
 package jsonparser.service.upd;
 
-import jsonparser.enumeration.ValueType;
-import jsonparser.model.json.Json;
 
 public interface ISymbolService {
 
@@ -10,8 +8,6 @@ public interface ISymbolService {
     boolean isNull(Character character);
 
     boolean isBoolean(Character character);
-
-    ValueType getInnerType(String innerValue, int position);
 
     Character getNextChar(String string, int position);
 

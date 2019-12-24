@@ -1,23 +1,28 @@
 package jsonparser.service.parser;
 
-import jsonparser.model.json.Json;
-import jsonparser.model.json.value.JValue;
-import jsonparser.service.upd.ISymbolService;
-import jsonparser.service.upd.impl.ParseService;
-import jsonparser.service.upd.impl.SymbolService;
+import jsonparser.model.json.value.JsonValue;
+import jsonparser.service.upd.IParseService;
 
 public class Parser implements IParser {
 
-    private ISymbolService symbolService;
-    private ParseService parseService = new ParseService();
+    private IParseService parseService;
 
-    public Parser() {
-        symbolService = new SymbolService();
+    public Parser(IParseService parseService) {
+        this.parseService = parseService;
     }
 
     /**
-     * counts left and right brackets, than compares counters
-     * thrown an exception if there is any mismatch
+     * Throws an exception if given string value is either null or empty
+     */
+    private void checkIfEmpty(String jsonString) {
+        if (jsonString.isBlank()) {
+            throw new RuntimeException("The given string is blank! Try another one");
+        }
+    }
+
+    /**
+     * Counts left and right brackets of both types (square and curly), than compares counters.
+     * Throws an exception if there is any mismatch
      */
     private void validateBrackets(String jsonString) {
         int squareLeft = 0;
@@ -44,9 +49,6 @@ public class Parser implements IParser {
         compareCounters(squareLeft, squareRight, curlyLeft, curlyRight);
     }
 
-    /**
-     * compares counters of both bracket types
-     */
     private void compareCounters(int sLeft, int sRight, int cLeft, int cRight) {
         if (sLeft != sRight || cLeft != cRight) {
             throw new RuntimeException("Incorrect input. Brackets mismatch. " +
@@ -56,11 +58,13 @@ public class Parser implements IParser {
     }
 
     /**
-     * validates brackets, than parses json char by char
+     * Validates given json string. Throws an exception if validation fails.
+     * Parses string and returns JsonValue
      */
-    public JValue parseJson(String jsonString) {
+    public JsonValue parseJson(String jsonString) {
+        checkIfEmpty(jsonString);
         validateBrackets(jsonString);
-        return parseService.createJson(jsonString, 0).getValue();
+        return (JsonValue) parseService.createJson(jsonString, 0).getObjectValue();
     }
 
 }

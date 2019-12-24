@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="237" />
+    <option name="myElementSize" value="264" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -30,12 +30,45 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="package.json" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="develop" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/develop" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
@@ -116,7 +149,7 @@
       <workItem from="1576739487954" duration="31780000" />
       <workItem from="1576824222393" duration="9406000" />
       <workItem from="1577102847164" duration="11381000" />
-      <workItem from="1577164052065" duration="2192000" />
+      <workItem from="1577164052065" duration="11890000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1576666230471</created>
@@ -192,18 +225,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="791" y="240" width="554" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1577115732150">
+    <state x="791" y="240" width="554" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1577171269052">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state x="791" y="240" width="554" height="633" key="#com.intellij.ide.util.MemberChooser/46.27.1874.1053@46.27.1874.1053" timestamp="1577115732150" />
+    <state x="791" y="240" width="554" height="633" key="#com.intellij.ide.util.MemberChooser/46.27.1874.1053@46.27.1874.1053" timestamp="1577171269052" />
     <state x="736" y="414" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1576666666588">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="736" y="414" width="494" height="297" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/46.27.1874.1053@46.27.1874.1053" timestamp="1576666666588" />
-    <state x="290" y="27" width="1376" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576826249369">
+    <state x="290" y="27" width="1376" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577175551466">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state x="290" y="27" width="1376" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/46.27.1874.1053@46.27.1874.1053" timestamp="1576826249369" />
+    <state x="290" y="27" width="1376" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/46.27.1874.1053@46.27.1874.1053" timestamp="1577175551466" />
     <state x="716" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576761066835">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
@@ -216,38 +249,38 @@
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="548" y="145" width="860" height="823" key="CommitChangelistDialog2/46.27.1874.1053@46.27.1874.1053" timestamp="1577117921878" />
-    <state width="1828" height="415" key="GridCell.Tab.0.bottom" timestamp="1577166361782">
+    <state width="1828" height="415" key="GridCell.Tab.0.bottom" timestamp="1577175272024">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.0.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361782" />
-    <state width="1828" height="415" key="GridCell.Tab.0.center" timestamp="1577166361781">
+    <state width="1828" height="415" key="GridCell.Tab.0.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272024" />
+    <state width="1828" height="415" key="GridCell.Tab.0.center" timestamp="1577175272022">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.0.center/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361781" />
-    <state width="1828" height="415" key="GridCell.Tab.0.left" timestamp="1577166361780">
+    <state width="1828" height="415" key="GridCell.Tab.0.center/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272021" />
+    <state width="1828" height="415" key="GridCell.Tab.0.left" timestamp="1577175272021">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.0.left/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361780" />
-    <state width="1828" height="415" key="GridCell.Tab.0.right" timestamp="1577166361782">
+    <state width="1828" height="415" key="GridCell.Tab.0.left/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272021" />
+    <state width="1828" height="415" key="GridCell.Tab.0.right" timestamp="1577175272023">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.0.right/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361782" />
-    <state width="1828" height="415" key="GridCell.Tab.1.bottom" timestamp="1577166361785">
+    <state width="1828" height="415" key="GridCell.Tab.0.right/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272023" />
+    <state width="1828" height="415" key="GridCell.Tab.1.bottom" timestamp="1577175272027">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.1.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361785" />
-    <state width="1828" height="415" key="GridCell.Tab.1.center" timestamp="1577166361784">
+    <state width="1828" height="415" key="GridCell.Tab.1.bottom/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272027" />
+    <state width="1828" height="415" key="GridCell.Tab.1.center" timestamp="1577175272026">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.1.center/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361784" />
-    <state width="1828" height="415" key="GridCell.Tab.1.left" timestamp="1577166361783">
+    <state width="1828" height="415" key="GridCell.Tab.1.center/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272026" />
+    <state width="1828" height="415" key="GridCell.Tab.1.left" timestamp="1577175272025">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.1.left/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361783" />
-    <state width="1828" height="415" key="GridCell.Tab.1.right" timestamp="1577166361785">
+    <state width="1828" height="415" key="GridCell.Tab.1.left/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272025" />
+    <state width="1828" height="415" key="GridCell.Tab.1.right" timestamp="1577175272027">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state width="1828" height="415" key="GridCell.Tab.1.right/46.27.1874.1053@46.27.1874.1053" timestamp="1577166361784" />
+    <state width="1828" height="415" key="GridCell.Tab.1.right/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272027" />
     <state x="472" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1577164064227">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
@@ -272,56 +305,40 @@
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="518" y="292" width="920" height="529" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/46.27.1874.1053@46.27.1874.1053" timestamp="1577166345589" />
+    <state x="628" y="157" width="710" height="792" key="find.popup" timestamp="1577175965365">
+      <screen x="46" y="27" width="1874" height="1053" />
+    </state>
+    <state x="628" y="157" width="710" height="792" key="find.popup/46.27.1874.1053@46.27.1874.1053" timestamp="1577175965365" />
     <state x="647" y="252" key="run.anything.popup" timestamp="1577107611397">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="647" y="252" key="run.anything.popup/46.27.1874.1053@46.27.1874.1053" timestamp="1577107611397" />
-    <state x="646" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1577107562735">
+    <state x="646" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1577175923792">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state x="646" y="259" width="672" height="678" key="search.everywhere.popup/46.27.1874.1053@46.27.1874.1053" timestamp="1577107562735" />
+    <state x="646" y="259" width="672" height="678" key="search.everywhere.popup/46.27.1874.1053@46.27.1874.1053" timestamp="1577175923792" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ParseService.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="167" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>67</line>
+          <line>85</line>
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ParseService.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="176" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>33</line>
+          <line>42</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/Main.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ParseService.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="185" />
+          <line>29</line>
+          <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>46</line>
+          <line>53</line>
           <properties class="jsonparser.service.upd.impl.ValueService" method="createStringValue">
             <option name="EMULATED" value="true" />
           </properties>
@@ -329,8 +346,8 @@
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>20</line>
-          <properties class="jsonparser.service.upd.impl.ValueService" method="createPair">
+          <line>17</line>
+          <properties class="jsonparser.service.upd.impl.ValueService">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="136" />
@@ -339,7 +356,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JsonParser$Main.ic" NAME="Main Coverage Results" MODIFIED="1576578445760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JsonParser$Main.ic" NAME="Main Coverage Results" MODIFIED="1577173935076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>jsonparser.*</FILTER>
     </SUITE>
   </component>

@@ -1,13 +1,13 @@
 package jsonparser.model.json.value.impl;
 
-import jsonparser.model.json.value.JValue;
+import jsonparser.model.json.value.JsonValue;
 
 
-public class JNumber implements JValue {
+public class JsonNumber implements JsonValue {
 
-    Number value;
+    private Number value;
 
-    public JNumber(Number value) {
+    public JsonNumber(Number value) {
         this.value = value;
     }
 

@@ -1,13 +1,13 @@
 package jsonparser.model.pack;
 
-public class ObjectIntPackage {
+public class ObjectWithPosition {
 
     private Object objectValue;
-    private int intValue;
+    private int position;
 
-    public ObjectIntPackage(Object objectValue, int intValue) {
+    public ObjectWithPosition(Object objectValue, int position) {
         this.objectValue = objectValue;
-        this.intValue = intValue;
+        this.position = position;
     }
 
     public Object getObjectValue() {
@@ -18,11 +18,11 @@ public class ObjectIntPackage {
         this.objectValue = objectValue;
     }
 
-    public int getIntValue() {
-        return intValue;
+    public int getPosition() {
+        return position;
     }
 
-    public void setIntValue(int intValue) {
-        this.intValue = intValue;
+    public void setPosition(int position) {
+        this.position = position;
     }
 }
