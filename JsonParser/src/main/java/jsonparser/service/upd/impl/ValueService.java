@@ -18,6 +18,52 @@ public class ValueService implements IValueService {
     }
 
     /**
+     * Truncates given string on startPosition, saves index of a first quot symbol,
+     * than saves value inside quot symbols to a pairName variable.
+     *
+     * @return returns an ObjectWithPosition, which contains a pairName and a position of last quot symbol in a given string
+     */
+    private ObjectWithPosition getPairName(String jsonString, int startPosition) {
+        String pairName = jsonString.substring(startPosition);
+        int firstQuotPosition = pairName.indexOf("\"") + startPosition; //was +1
+        pairName = pairName.substring(pairName.indexOf("\"") + 1);
+        pairName = pairName.substring(0, pairName.indexOf("\""));
+        return new ObjectWithPosition(pairName, firstQuotPosition + pairName.length() + 2);
+    }
+
+    /**
+     * @return returns an index of a first digit in given string
+     */
+    private int findStartPosition(String jsonString, int startPos) {
+        char[] jsonChars = jsonString.toCharArray();
+        for (int charIndex = startPos; charIndex < jsonChars.length; charIndex++) {
+            if (symbolService.isNumber(jsonChars[charIndex])) {
+                startPos = charIndex;
+                break;
+            }
+        }
+        return startPos;
+    }
+
+    /**
+     * @return returns an index of a last digit in given string
+     */
+    private ObjectWithPosition findStopPosition(int startPos, String jsonString) {
+        int stopPos = 0;
+        boolean commaFound = false;
+        for (int charIndex = startPos; charIndex < jsonString.length(); charIndex++) {
+            if (!symbolService.isNumber(jsonString.charAt(charIndex))) {
+                break;
+            }
+            if (jsonString.charAt(charIndex) == '.') {
+                commaFound = true;
+            }
+            stopPos = charIndex;
+        }
+        return new ObjectWithPosition(commaFound, stopPos);
+    }
+
+    /**
      * Parses string from given startPosition.
      * Receives a pair name from a {@link #getPairName(String, int) getPairName} method,
      * then receives a pair value from a {@link ParseService#createJson(String, int) createJson} method
@@ -32,20 +78,6 @@ public class ValueService implements IValueService {
         JsonPair pair = new JsonPair((String) pairNamePackage.getObjectValue(),
                 (JsonValue) pairValuePackage.getObjectValue());
         return new ObjectWithPosition(pair, pairValuePackage.getPosition());
-    }
-
-    /**
-     * Truncates given string on startPosition, saves index of a first quot symbol,
-     * than saves value inside quot symbols to a pairName variable.
-     *
-     * @return returns an ObjectWithPosition, which contains a pairName and a position of last quot symbol in a given string
-     */
-    private ObjectWithPosition getPairName(String jsonString, int startPosition) {
-        String pairName = jsonString.substring(startPosition);
-        int firstQuotPosition = pairName.indexOf("\"") + startPosition; //was +1
-        pairName = pairName.substring(pairName.indexOf("\"") + 1);
-        pairName = pairName.substring(0, pairName.indexOf("\""));
-        return new ObjectWithPosition(pairName, firstQuotPosition + pairName.length() + 2);
     }
 
     /**
@@ -115,36 +147,6 @@ public class ValueService implements IValueService {
         return new ObjectWithPosition(Integer.valueOf(jsonString.substring(startPos, stopPos + 1)), stopPos);
     }
 
-    /**
-     * @return returns an index of a first digit in given string
-     */
-    private int findStartPosition(String jsonString, int startPos) {
-        char[] jsonChars = jsonString.toCharArray();
-        for (int charIndex = startPos; charIndex < jsonChars.length; charIndex++) {
-            if (symbolService.isNumber(jsonChars[charIndex])) {
-                startPos = charIndex;
-                break;
-            }
-        }
-        return startPos;
-    }
 
-    /**
-     * @return returns an index of a last digit in given string
-     */
-    private ObjectWithPosition findStopPosition(int startPos, String jsonString) {
-        int stopPos = 0;
-        boolean commaFound = false;
-        for (int charIndex = startPos; charIndex < jsonString.length(); charIndex++) {
-            if (!symbolService.isNumber(jsonString.charAt(charIndex))) {
-                break;
-            }
-            if (jsonString.charAt(charIndex) == '.') {
-                commaFound = true;
-            }
-            stopPos = charIndex;
-        }
-        return new ObjectWithPosition(commaFound, stopPos);
-    }
 
 }

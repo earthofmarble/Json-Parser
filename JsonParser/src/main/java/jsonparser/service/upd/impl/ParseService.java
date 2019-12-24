@@ -19,42 +19,6 @@ public class ParseService implements IParseService {
     }
 
     /**
-     * Reads given string char by char, defines current's value type. Creates a JsonValue and returns it.
-     *
-     * @return ObjectWithPosition, which contains a JsonValue object and a position, where reading has stopped.
-     */
-    public ObjectWithPosition createJson(String jsonString, int startPosition) {
-        char currentChar = jsonString.charAt(startPosition);
-        while (true) {
-            if (currentChar == '{') {
-                return createJsonObject(jsonString, currentChar, startPosition);
-            }
-
-            if (currentChar == '[') {
-                return createJsonArray(jsonString, currentChar, startPosition);
-            }
-
-            if (currentChar == '"') {
-                return createJsonString(jsonString, startPosition);
-            }
-
-            if (symbolService.isNumber(currentChar)) {
-                return createJsonNumber(jsonString, startPosition);
-            }
-
-            if (symbolService.isNull(currentChar)) {
-                return createJsonNull(startPosition);
-            }
-
-            if (symbolService.isBoolean(currentChar)) {
-                return valueService.createBooleanValue(jsonString, startPosition);
-            }
-            startPosition++;
-            currentChar = jsonString.charAt(startPosition);
-        }
-    }
-
-    /**
      * Creates a JsonNull object.
      *
      * @return ObjectWithPosition, which contains a JsonNull object and a position, where reading has stopped.
@@ -129,6 +93,42 @@ public class ParseService implements IParseService {
             startPosition += buf.indexOf('}');
         }
         return new ObjectWithPosition(jsonObject, startPosition);
+    }
+
+    /**
+     * Reads given string char by char, defines current's value type. Creates a JsonValue and returns it.
+     *
+     * @return ObjectWithPosition, which contains a JsonValue object and a position, where reading has stopped.
+     */
+    public ObjectWithPosition createJson(String jsonString, int startPosition) {
+        char currentChar = jsonString.charAt(startPosition);
+        while (true) {
+            if (currentChar == '{') {
+                return createJsonObject(jsonString, currentChar, startPosition);
+            }
+
+            if (currentChar == '[') {
+                return createJsonArray(jsonString, currentChar, startPosition);
+            }
+
+            if (currentChar == '"') {
+                return createJsonString(jsonString, startPosition);
+            }
+
+            if (symbolService.isNumber(currentChar)) {
+                return createJsonNumber(jsonString, startPosition);
+            }
+
+            if (symbolService.isNull(currentChar)) {
+                return createJsonNull(startPosition);
+            }
+
+            if (symbolService.isBoolean(currentChar)) {
+                return valueService.createBooleanValue(jsonString, startPosition);
+            }
+            startPosition++;
+            currentChar = jsonString.charAt(startPosition);
+        }
     }
 
 }
