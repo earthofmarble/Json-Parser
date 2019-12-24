@@ -8,6 +8,7 @@ import jsonparser.model.json.value.impl.JsonString;
 import jsonparser.model.pack.ObjectWithPosition;
 import jsonparser.service.ISymbolService;
 import jsonparser.service.IValueService;
+import jsonparser.util.exception.SyntaxException;
 
 public class ValueService implements IValueService {
 
@@ -126,7 +127,7 @@ public class ValueService implements IValueService {
             jBoolean = new JsonBoolean(false);
             return new ObjectWithPosition(jBoolean, startPosition + 4);
         }
-        throw new RuntimeException("JSON syntax error. Expected true or false parameter. Found: [" + croppedString + "]");
+        throw new SyntaxException("JSON syntax error. Expected true or false parameter. Found: [" + croppedString + "]");
     }
 
     /**
@@ -146,7 +147,5 @@ public class ValueService implements IValueService {
         }
         return new ObjectWithPosition(Integer.valueOf(jsonString.substring(startPos, stopPos + 1)), stopPos);
     }
-
-
 
 }

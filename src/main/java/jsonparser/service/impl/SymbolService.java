@@ -1,6 +1,7 @@
 package jsonparser.service.impl;
 
 import jsonparser.service.ISymbolService;
+import jsonparser.util.exception.SymbolMissingException;
 
 public class SymbolService implements ISymbolService {
 
@@ -11,11 +12,11 @@ public class SymbolService implements ISymbolService {
     public Character getNextChar(String string, int startPosition) {
         for (int charIndex = startPosition + 1; charIndex < string.length(); charIndex++) {
             char currentChar = string.charAt(charIndex);
-            if (!(currentChar == ' ' || currentChar == '\n' || currentChar == ',')) {
+            if (!(currentChar == ' ' || currentChar == '\n' || currentChar == '\t' || currentChar == ',')) {
                 return currentChar;
             }
         }
-        throw new RuntimeException("There is no chars after position [" + startPosition + "] in: [" + string + "] except commas, spaces and new lines");
+        throw new SymbolMissingException("There is no chars after position [" + startPosition + "] in: [" + string + "] except commas, spaces and new lines");
     }
 
     /**

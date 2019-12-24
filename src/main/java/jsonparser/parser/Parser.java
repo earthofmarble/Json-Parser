@@ -2,6 +2,7 @@ package jsonparser.parser;
 
 import jsonparser.model.json.value.JsonValue;
 import jsonparser.service.IParseService;
+import jsonparser.util.exception.ValidationException;
 
 public class Parser implements IParser {
 
@@ -16,7 +17,7 @@ public class Parser implements IParser {
      */
     private void checkIfEmpty(String jsonString) {
         if (jsonString.isBlank()) {
-            throw new RuntimeException("The given string is blank! Try another one");
+            throw new ValidationException("The given string is blank! Try another one");
         }
     }
 
@@ -51,7 +52,7 @@ public class Parser implements IParser {
 
     private void compareCounters(int sLeft, int sRight, int cLeft, int cRight) {
         if (sLeft != sRight || cLeft != cRight) {
-            throw new RuntimeException("Incorrect input. Brackets mismatch. " +
+            throw new ValidationException("Incorrect input. Brackets mismatch. " +
                     "Found: [" + sLeft + "] squareLeft, [" + sRight + "] squareRight," +
                     " [" + cLeft + "] curlyLeft, [" + cRight + "] curlyRight");
         }
