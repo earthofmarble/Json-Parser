@@ -91,7 +91,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -149,7 +149,7 @@
       <workItem from="1576739487954" duration="31780000" />
       <workItem from="1576824222393" duration="9406000" />
       <workItem from="1577102847164" duration="11381000" />
-      <workItem from="1577164052065" duration="11890000" />
+      <workItem from="1577164052065" duration="12458000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1576666230471</created>
@@ -249,6 +249,10 @@
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state x="548" y="145" width="860" height="823" key="CommitChangelistDialog2/46.27.1874.1053@46.27.1874.1053" timestamp="1577117921878" />
+    <state x="766" y="314" width="424" height="491" key="FileChooserDialogImpl" timestamp="1577176170107">
+      <screen x="46" y="27" width="1874" height="1053" />
+    </state>
+    <state x="766" y="314" width="424" height="491" key="FileChooserDialogImpl/46.27.1874.1053@46.27.1874.1053" timestamp="1577176170107" />
     <state width="1828" height="415" key="GridCell.Tab.0.bottom" timestamp="1577175272024">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
@@ -281,10 +285,10 @@
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
     <state width="1828" height="415" key="GridCell.Tab.1.right/46.27.1874.1053@46.27.1874.1053" timestamp="1577175272027" />
-    <state x="472" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1577164064227">
+    <state x="472" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1577176175148">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
-    <state x="472" y="188" width="1022" height="737" key="SettingsEditor/46.27.1874.1053@46.27.1874.1053" timestamp="1577164064227" />
+    <state x="472" y="188" width="1022" height="737" key="SettingsEditor/46.27.1874.1053@46.27.1874.1053" timestamp="1577176175148" />
     <state x="578" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1576835361517">
       <screen x="46" y="27" width="1874" height="1053" />
     </state>
@@ -323,12 +327,12 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>85</line>
+          <line>90</line>
           <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>42</line>
+          <line>44</line>
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -338,7 +342,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/jsonparser/service/upd/impl/ValueService.java</url>
-          <line>53</line>
+          <line>56</line>
           <properties class="jsonparser.service.upd.impl.ValueService" method="createStringValue">
             <option name="EMULATED" value="true" />
           </properties>
