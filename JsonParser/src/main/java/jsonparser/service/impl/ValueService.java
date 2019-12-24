@@ -1,4 +1,4 @@
-package jsonparser.service.upd.impl;
+package jsonparser.service.impl;
 
 import jsonparser.model.json.JsonPair;
 import jsonparser.model.json.value.JsonValue;
@@ -6,8 +6,8 @@ import jsonparser.model.json.value.impl.JsonBoolean;
 import jsonparser.model.json.value.impl.JsonNumber;
 import jsonparser.model.json.value.impl.JsonString;
 import jsonparser.model.pack.ObjectWithPosition;
-import jsonparser.service.upd.ISymbolService;
-import jsonparser.service.upd.IValueService;
+import jsonparser.service.ISymbolService;
+import jsonparser.service.IValueService;
 
 public class ValueService implements IValueService {
 

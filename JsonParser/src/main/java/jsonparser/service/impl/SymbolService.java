@@ -1,6 +1,6 @@
-package jsonparser.service.upd.impl;
+package jsonparser.service.impl;
 
-import jsonparser.service.upd.ISymbolService;
+import jsonparser.service.ISymbolService;
 
 public class SymbolService implements ISymbolService {
 

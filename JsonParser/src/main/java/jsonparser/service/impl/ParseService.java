@@ -1,12 +1,12 @@
-package jsonparser.service.upd.impl;
+package jsonparser.service.impl;
 
 import jsonparser.model.json.JsonPair;
 import jsonparser.model.json.value.JsonValue;
 import jsonparser.model.json.value.impl.*;
 import jsonparser.model.pack.ObjectWithPosition;
-import jsonparser.service.upd.IParseService;
-import jsonparser.service.upd.ISymbolService;
-import jsonparser.service.upd.IValueService;
+import jsonparser.service.IParseService;
+import jsonparser.service.ISymbolService;
+import jsonparser.service.IValueService;
 
 public class ParseService implements IParseService {
 

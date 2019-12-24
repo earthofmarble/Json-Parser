@@ -1,4 +1,4 @@
-package jsonparser.service.upd;
+package jsonparser.service;
 
 import jsonparser.model.pack.ObjectWithPosition;
 

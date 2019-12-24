@@ -1,7 +1,7 @@
-package jsonparser.service.parser;
+package jsonparser.parser;
 
 import jsonparser.model.json.value.JsonValue;
-import jsonparser.service.upd.IParseService;
+import jsonparser.service.IParseService;
 
 public class Parser implements IParser {
 

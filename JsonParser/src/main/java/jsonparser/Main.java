@@ -1,12 +1,12 @@
 package jsonparser;
 
 import jsonparser.model.json.value.JsonValue;
-import jsonparser.service.parser.IParser;
-import jsonparser.service.parser.Parser;
-import jsonparser.service.upd.ISymbolService;
-import jsonparser.service.upd.impl.ParseService;
-import jsonparser.service.upd.impl.SymbolService;
-import jsonparser.service.upd.impl.ValueService;
+import jsonparser.parser.IParser;
+import jsonparser.parser.Parser;
+import jsonparser.service.ISymbolService;
+import jsonparser.service.impl.ParseService;
+import jsonparser.service.impl.SymbolService;
+import jsonparser.service.impl.ValueService;
 
 public class Main {
 

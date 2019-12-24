@@ -1,4 +1,4 @@
-package jsonparser.service.parser;
+package jsonparser.parser;
 
 import jsonparser.model.json.value.JsonValue;
 
