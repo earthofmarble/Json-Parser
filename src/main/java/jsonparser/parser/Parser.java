@@ -67,5 +67,9 @@ public class Parser implements IParser {
         return (JsonValue) parseService.createJson(jsonString, 0).getObjectValue();
     }
 
+    public void validateJsonString(){
+        
+    }
+
 }
 
