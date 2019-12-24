@@ -8,20 +8,13 @@ import java.util.List;
 
 public class JObject implements JValue {
 
-    List<JPair> fields;
-
-    public JObject() {
-        fields = new ArrayList<>();
-    }
+    List<JPair> fields = new ArrayList<>();
 
     public void addField(JPair pair){
         fields.add(pair);
     }
 
     public List<JPair> getFields() {
-        if (fields==null){
-            fields = new ArrayList<>();
-        }
         return fields;
     }
 

@@ -1,6 +1,7 @@
 package jsonparser.service.upd.impl;
 
 import jsonparser.model.json.value.JValue;
+import jsonparser.model.json.value.impl.JArray;
 import jsonparser.model.json.value.impl.JNull;
 import jsonparser.model.json.value.impl.JObject;
 import jsonparser.model.pack.PairPositionPackage;
@@ -31,6 +32,22 @@ public class ParseService {
                 }
                 return new PositionValuePackage(startPosition, jValue);
             }
+
+            if (currentChar == '[') {
+                jValue = new JArray();
+                while (currentChar != ']' && symbolService.getNextChar(jsonString, startPosition) != ']') {
+                    PositionValuePackage receivedValue = createJson(jsonString, startPosition+1);
+                    ((JArray) jValue).addElement(receivedValue.getValue());
+                    startPosition = receivedValue.getPosition()+1; //was +2
+                    currentChar = jsonString.charAt(startPosition);
+                }
+                if (currentChar!=']'){
+                    String buf = jsonString.substring(startPosition);
+                    startPosition += buf.indexOf(']');
+                }
+                return new PositionValuePackage(startPosition, jValue);
+            }
+
 
             if (currentChar == '"') {
                 PositionValuePackage stringValuePackage = valueService.createStringValue(jsonString, startPosition);

@@ -51,7 +51,7 @@ public class ValueService implements IValueService {
         }
         String value = jsonString.substring(startPosition+1, stopPos+1); //mb +2
         JValue jString = new JString(value);
-        return new PositionValuePackage(stopPos, jString);
+        return new PositionValuePackage(stopPos+1, jString);
     }
 
     public PositionValuePackage createNumericValue(String jsonString, int startPosition) {

@@ -7,12 +7,14 @@ import java.util.List;
 
 public class JArray implements JValue {
 
-    List<JValue> elements;
+    List<JValue> elements = new ArrayList<>();
+
+    public void addElement(JValue element){
+        elements.add(element);
+    }
+
 
     public List<JValue> getElements() {
-        if (elements==null){
-            elements = new ArrayList<>();
-        }
         return elements;
     }
 
